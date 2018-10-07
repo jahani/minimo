@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'B Yekan';
+    src: url('https://lib.arvancloud.com/ar/font/Yekan/Yekan.eot'); /* IE9 Compat Modes */
+    src: url('https://lib.arvancloud.com/ar/font/Yekan/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://lib.arvancloud.com/ar/font/Yekan/Yekan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://lib.arvancloud.com/ar/font/Yekan/Yekan.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+html, body, .navbar .logo  {
+    font-family: 'B Yekan', tahoma, Arial;
+}
+
+.theme-newsletter [type='email'] {
+    direction: ltr;
+}
+.theme-newsletter [type='email']::placeholder {
+    direction: rtl;
+    text-align: center;
+}

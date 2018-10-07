@@ -1,0 +1,214 @@
+/*
+Theme Name: Minimo
+Theme URI: https://wordpress.org/themes/minimo/
+Author: Peyman Jahani
+Description: Requires Ajax Load More plugin and Supports Newsletter and Regenerate Thumbnail plugins
+Text Domain: minimo
+Version: 1.0
+*/
+
+
+/** General **/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1100px;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.section {
+    padding: 30px 0;
+}
+
+.fluid {
+    width: 100%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 25px;
+    border: 1px solid black;
+    font-size: 120%;
+}
+
+p, div {
+    line-height: 1.6;
+}
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/** Head **/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    /* background-color: bisque; */
+}
+
+.navbar a, .menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+}
+.navbar .logo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    letter-spacing: 4px;
+    /* font-weight: bold; */
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar .menu li {
+    min-width: 150px;
+    text-transform: uppercase;
+    color: darkslategray;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+/** Posts **/
+
+.post {
+    padding-bottom: 60px;
+}
+.post:nth-of-type(2n+1) {
+    padding-inline-end: 10px;
+}
+.post:nth-of-type(2n) {
+    padding-inline-start: 10px;
+}
+
+h1 {
+    font-size: 200%;
+    /* padding-top: 5px; */
+    padding-bottom: 15px;
+}
+h2 {
+    font-size: 150%;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 100%;
+    /* padding-top: 10px; */
+    padding-bottom: 5px;
+}
+.post .post_image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.post .post_category {
+    /* padding: 10px 0; */
+}
+.post .post_description {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.post .post_comments_link {
+    /* margin: 10px 0; */
+    padding: 10px 0;
+}
+.post .post_category a, .post .post_title a, .post .post_comments_link a {
+    text-decoration: none;
+    color: inherit;
+}
+.post .post_category, .post .post_comments_link {
+    color: lightgray;
+    /* color: #f0f0f0; */
+}
+.post .post_category, .post .post_comments_link {
+    text-transform: uppercase;   
+}
+
+
+/** Newsletter **/
+.featured-section {
+    background-color: #f0f0f0;
+}
+
+.newsletter {
+    margin: 40px 0 60px;
+}
+
+.theme-newsletter {
+    text-align: center;
+}
+.theme-newsletter .form {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 500px;
+    max-width: 100%;
+}
+.theme-newsletter [type='email'] {
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-family: inherit;
+    line-height: 28px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    width: calc(100% - 50px);
+}
+.theme-newsletter [type='submit'] {
+    float: right;
+    background: none;
+    border: 0;
+    margin-bottom: 5px;
+    width: 50px;
+}
+
+
+/** Footer **/
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+}
+.social ul.menu {
+    display: inline-block;
+}
+
+
+/** Ajax Load More **/
+#ajax-load-more {
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+.alm-btn-wrap .alm-load-more-btn {
+    background-color: initial;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 30px;
+    border: 1px solid black;
+    font-size: 120%;
+    font-family: inherit;
+}
+
+.alm-btn-wrap .alm-load-more-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.alm-btn-wrap .alm-load-more-btn:active {}
+
+.alm-btn-wrap .alm-load-more-btn:focus,
+.alm-btn-wrap .alm-load-more-btn:active {
+    outline: none;
+}
+
+.alm-btn-wrap .alm-load-more-btn.loading {
+    color: gray;
+    border-color: gray;
+}
+
+.alm-btn-wrap .alm-load-more-btn.done {
+    color: lightgray;
+    border-color: lightgray;
+}
+
+.alm-masonry,
+.alm-btn-wrap {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.alm-btn-wrap {
+    text-align: center;
+    padding: 80px 0 100px;
+}
