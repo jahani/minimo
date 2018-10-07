@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="post">
-                            <?php the_post_thumbnail('jahanitheme_featured', array('class' => 'fluid post_image')) ?>
+                            <?php the_post_thumbnail('minimo_featured', array('class' => 'fluid post_image')) ?>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                             <h1 class="post_title"><a href="<?=the_permalink()?>"><?=the_title()?></a></h1>
                             <div class="post_description"><?= the_content('') ?></div>
                             <?php if (!is_singular()) : ?>
-                                <div class="post_comments_link"><a href="<?=the_permalink()?>"><?php _e('Leave a comment', 'jahani-theme'); ?></a></div>
+                                <div class="post_comments_link"><a href="<?=the_permalink()?>"><?php _e('Leave a comment', 'minimo'); ?></a></div>
                             <?php endif; ?>
                             <?=get_template_part( 'template-parts/post/related')?>
                             <?=get_template_part( 'template-parts/comments/content')?>
@@ -67,7 +67,7 @@
             </div> <!-- .container -->
 <?php else: ?>
 <div class="container">
-    <p><?php _e('There is no post to show.', 'jahani-theme'); ?></p>
+    <p><?php _e('There is no post to show.', 'minimo'); ?></p>
 </div>
 <?php endif; ?>
 </section>

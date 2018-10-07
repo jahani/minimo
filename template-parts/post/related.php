@@ -23,7 +23,7 @@
 
     <section class="related section featured-section">
         <div class="container">
-            <h3 class=""><?php _e('You may also like', 'jahani-theme') ?></h3>
+            <h3 class=""><?php _e('You may also like', 'minimo') ?></h3>
             <div class="row">
                 <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
                     <?=get_template_part( 'template-parts/post/content', 'half')?>

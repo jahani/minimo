@@ -40,6 +40,6 @@
         $params = implode(' ', [$authorParam, $categoryParam, $tagParam, $dateParam]);
 
     ?>
-    <?=do_shortcode('[ajax_load_more transition_container="false" css_classes="row" '.$params.' post__not_in="' . $post__not_in . '" button_label="'.__('Load More', 'jahani-theme').'" button_loading_label="'.__('Loading...', 'jahani-theme').'" posts_per_page="6" scroll="false" pause="true"]')?>
+    <?=do_shortcode('[ajax_load_more transition_container="false" css_classes="row" '.$params.' post__not_in="' . $post__not_in . '" button_label="'.__('Load More', 'minimo').'" button_loading_label="'.__('Loading...', 'minimo').'" posts_per_page="6" scroll="false" pause="true"]')?>
     <!-- </div> -->
 <?php endif;?>

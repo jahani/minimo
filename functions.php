@@ -27,8 +27,8 @@ add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
  * Thumbnails
  */
 if (function_exists('add_image_size')) {
-    add_image_size('jahanitheme_featured', 1100, 600, true);
-    add_image_size('jahanitheme_thumbnail', 450, 300, true);
+    add_image_size('minimo_featured', 1100, 600, true);
+    add_image_size('minimo_thumbnail', 450, 300, true);
 }
 
 add_filter('post_thumbnail_html', 'remove_width_attribute', 10);
@@ -49,9 +49,9 @@ add_action( 'after_setup_theme', 'alm_remove_image_size', 1 );
 /**
  * Translation
  */
-// load_theme_textdomain( 'jahani-theme');
+// load_theme_textdomain( 'minimo');
 function my_theme_setup() {
-    load_theme_textdomain( 'jahani-theme', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'minimo', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'my_theme_setup' );
 
@@ -81,9 +81,9 @@ function register_my_menus()
 {
     register_nav_menus(
         array(
-            'header-menu' => __('Header Menu', 'jahani-theme'),
-            'footer-menu' => __('Footer Menu', 'jahani-theme'),
-            'social-menu' => __('Social Menu', 'jahani-theme'),
+            'header-menu' => __('Header Menu', 'minimo'),
+            'footer-menu' => __('Footer Menu', 'minimo'),
+            'social-menu' => __('Social Menu', 'minimo'),
         )
     );
 }
@@ -92,7 +92,7 @@ add_action('init', 'register_my_menus');
 function social_menu_function($nav, $args)
 {
     if ($args->theme_location == 'social-menu') {
-        return __('Follow', 'jahani-theme').'&nbsp&nbsp&nbsp' . $nav;
+        return __('Follow', 'minimo').'&nbsp&nbsp&nbsp' . $nav;
     }
     return $nav;
 }
